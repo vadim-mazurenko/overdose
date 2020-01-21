@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer">
+            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.popup" before="-" template="Magento_Newsletter::popup-subscribe.phtml" ifconfig="newsletter/general/active">
+                <block class="Magento\Cms\Block\Block" name="block_newsletter">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">block_newsletter</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+
+<!--        <referenceContainer name="footer">-->
+<!--            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.fhgf" as="subscribe" before="-" template="Magento_Newsletter::subscribe.phtml" ifconfig="newsletter/general/active"/>-->
+<!--        </referenceContainer>-->
+
+    </body>
+</page>
+
+
+
+
+
+
